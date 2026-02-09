@@ -5,6 +5,6 @@ export default defineConfig({
   out: "./drizzle",
   dialect: "postgresql",
   dbCredentials: {
-    url: 'postgresql://neondb_owner:npg_Ta7dCiMmxrf3@ep-square-lake-ahxagu7k-pooler.c-3.us-east-1.aws.neon.tech/ai-interview-mocker?sslmode=require&channel_binding=require',
+    url: process.env.DRIZZLE_DB_URL,
   },
 });

@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // ⚠️ KEEP YOUR WORKING KEY HERE
-const apiKey = "AIzaSyDE-vTsiiARsrSc2sM2H9Hmb_yCxjhtmDo"; 
+const apiKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY; 
 
 const genAI = new GoogleGenerativeAI(apiKey);
 

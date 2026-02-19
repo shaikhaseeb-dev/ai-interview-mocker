@@ -7,25 +7,40 @@ export default function DashboardPage() {
     <div className="p-6 md:p-10 max-w-7xl mx-auto">
 
       {/* HEADER */}
-      <div className="flex justify-between items-center mb-8">
-        <div>
-          <h2 className="font-bold text-3xl mb-1">
-            AI Mock Interview Dashboard
-          </h2>
-          <p className="text-gray-600">
-            Practice interviews, get AI feedback, and improve faster.
-          </p>
+      <div className="flex justify-between items-center mb-10">
+
+        {/* LOGO + BRAND */}
+        <div className="flex items-center gap-3">
+          
+          {/* Logo Icon */}
+          <div className="w-10 h-10 bg-black text-white flex items-center justify-center rounded-lg font-bold text-lg">
+            IQ
+          </div>
+
+          {/* Brand Text */}
+          <div>
+            <h2 className="font-bold text-2xl">
+              InterviewIQ
+            </h2>
+            <p className="text-sm text-gray-500">
+              AI Powered Interview Training Platform
+            </p>
+          </div>
+
         </div>
+
+        {/* User */}
+        <UserButton />
 
       </div>
 
-      {/* PREMIUM INFO BANNER */}
-      <div className="mb-8 p-5 rounded-xl bg-gradient-to-r from-indigo-600 to-blue-600 text-white">
+      {/* INFO BANNER */}
+      <div className="mb-8 p-5 rounded-xl bg-gray-900 text-white">
         <h3 className="text-lg font-semibold flex items-center gap-2 mb-1">
-          <Sparkles size={18} /> Resume-Based Interviews (Premium)
+          <Sparkles size={18} /> Resume-Based Interviews (Coming Soon)
         </h3>
-        <p className="text-sm opacity-90">
-          Upload your resume and get interview questions tailored to your real skills and experience.
+        <p className="text-sm opacity-80">
+          Upload your resume and receive AI-tailored technical and behavioral questions.
         </p>
       </div>
 
@@ -42,7 +57,7 @@ export default function DashboardPage() {
             AI-Generated Questions
           </h3>
           <p className="text-sm text-gray-600">
-            Questions generated based on job role, experience, and resume.
+            Structured questions generated based on job role and experience.
           </p>
         </div>
 
@@ -50,21 +65,14 @@ export default function DashboardPage() {
         <div className="p-6 border rounded-xl bg-white hover:shadow-md transition">
           <Clock className="text-green-600 mb-3" />
           <h3 className="font-semibold mb-1">
-            Real Interview Experience
+            Intelligent Evaluation
           </h3>
           <p className="text-sm text-gray-600">
-            Answer with voice or text, get instant AI scoring and feedback.
+            Get instant AI feedback and performance scoring.
           </p>
         </div>
       </div>
 
-      {/* CHILD CONTENT (FUTURE: HISTORY, ETC.) */}
-      {/*
-        This area will later show:
-        - Interview history
-        - Recent attempts
-        - Progress
-      */}
     </div>
   )
 }

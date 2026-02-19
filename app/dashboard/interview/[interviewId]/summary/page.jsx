@@ -4,6 +4,9 @@ import { eq, and } from "drizzle-orm"
 import { currentUser } from "@clerk/nextjs/server"
 import Link from "next/link"
 
+
+export const dynamic = "force-dynamic";
+
 export default async function InterviewSummaryPage({ params }) {
   const { interviewId } = await params
   const user = await currentUser()

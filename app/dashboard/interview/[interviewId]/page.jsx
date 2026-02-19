@@ -3,6 +3,8 @@ import { mockInterviews } from "@/utils/schema"
 import { eq } from "drizzle-orm"
 import InterviewClient from "./InterviewClient"
 
+export const dynamic = "force-dynamic";
+
 export default async function InterviewPage({ params }) {
   const { interviewId } = await params
 
